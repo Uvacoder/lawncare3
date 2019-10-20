@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+@import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css")
+@font-face
+    font-family: 'Noteworthy Light'
+    font-style: normal
+    font-weight: normal
+    src: local('Noteworthy Light'), url('../assets/fonts/Noteworthy-Lt.woff') format('woff')
+
+
+*,
+*::before,
+*::after
+    margin: 0
+    padding: 0
+    outline: none
+    box-sizing: border-box
+
+
+html,
+body
+    width: 100%
+    height: 100%
+
+
+html
+    font-family: "Open Sans", sans-serif
+    box-sizing: border-box
+
+
+img
+    max-width: 100%
+    height: auto
+
+a
+    text-decoration: none
+    color: inherit
+
+.logo
+    font-size: $gutter
+    font-weight: bold
+
+.green-txt
+    color: $green
+
+.fancy-txt
+    font-family: $fancy
+
+.bold-txt
+    font-weight: bold
+    font-size: $gutter
+
+.btn
+    height: 50px
+    width: 250px
+    border: none
+    border-radius: 5px
+    font-size: $gutter + .25em
+    font-family: $fancy
+    &--white
+        background: $white
+        color: $green
+    &--green
+        color: $white
+        background: $green

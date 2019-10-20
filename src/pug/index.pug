@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+html(lang="en")
+    include templates/head.pug
+    body
+
+        nav.nav-area
+            h1.logo.green-txt.fancy-txt J's Garden & Lawn Care
+            ul.menu
+                li.menu__listItem
+                    a(href="#", target="_blank", rel="noopener noreferrer") Who We Are
+                li.menu__listItem
+                    a(href="#", target="_blank", rel="noopener noreferrer") See Our Work
+                li.menu__listItem
+                    a(href="#", target="_blank", rel="noopener noreferrer") Contact Us
+            span.open-button
+                img(src="assets/imgs/bars.svg", alt="Menu button icon")
+        header.jumbotron
+            p Lending a 
+                span.green-txt.fancy-txt Green Thumb 
+                |for over 100 years.
+        section(id="about" class="section section--green")
+            h3.fancy-txt Your Garden and Landscape’s Best Choice
+            p Transform your yard into a landscape masterpiece with J’s Garden and Lawn Care. We’ve been proudly changing lives with our work for over a century. Whether you just need simple lawn care, or a complete overhaul of your garden, we are here for you.
+        section(id="offers" class="section")
+            h3.green-txt.fancy-txt What We Offer
+            section.offerings
+                figure.offer
+                    img(src="assets/imgs/lawnmower.svg", alt="Image of a lawnmower" class="offer__img")
+                    figcaption.bold-txt.offer__header-text Lawn Care
+                    blockquote.offer__sub-text We go above and beyond to make sure that every part of your garden is properly attended to and cared for.
+                figure.offer
+                    img(src="assets/imgs/watercan.svg", alt="Image of a watercan" class="offer__img")
+                    figcaption.bold-txt.offer__header-text Lawn Care
+                    blockquote.offer__sub-text We go above and beyond to make sure that every part of your garden is properly attended to and cared for.
+                figure.offer
+                    img(src="assets/imgs/tree.svg", alt="Image of a tree" class="offer__img")
+                    figcaption.bold-txt.offer__header-text Lawn Care
+                    blockquote.offer__sub-text We go above and beyond to make sure that every part of your garden is properly attended to and cared for.
+        section(id="work" class="section")
+            h3.green-txt.fancy-txt See our work
+            section.gallery
+                img.gallery__item(src="assets/imgs/image1.jpg", alt="Random image")
+                img.gallery__item(src="assets/imgs/iamge2.jpg", alt="Random image")
+                img.gallery__item(src="assets/imgs/image3.jpg", alt="Random image")
+                img.gallery__item(src="assets/imgs/image4.jpg", alt="Random image")
+                img.gallery__item(src="assets/imgs/image5.jpg", alt="Random image")
+            button(class="btn btn--green") View Gallery
+        section(id="contact" class="section section--green")
+            form(action="#", method="post" class="form")
+                h3(class="bold-txt fancy-txt") Get In Touch With Us!
+                p Just leave us your contact information and one of our skilled professionals will be in touch with you shortly to discuss all your needs!
+                article.form-area
+                    label(for="name" class="form-area__label") Name
+                    input(type="text" class="form-area__input")
+                article.form-area
+                    label(for="tel" class="form-area__label") Tel.
+                    input(type="tel" class="form-area__input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required)
+                article.form-area
+                    label(for="email" class="form-area__label") Email
+                    input(type="email" class="form-area__input")
+                button(class="btn btn--white") Submit
+        footer.footer
+            p.footer__text Made by Julius R.
+        script(src="js/app.js")
